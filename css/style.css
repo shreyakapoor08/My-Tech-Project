@@ -1,0 +1,542 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box
+}
+
+body{
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.41;
+}
+
+
+/*Header start*/
+#header{
+    background-color: #fff;
+    box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+header a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #010611;
+}
+
+header nav{
+    display: none;
+}
+
+header.open nav{
+    display: block;
+}
+
+header nav a{
+    display: block;
+    transition: all 0.4s;
+}
+
+header nav a:hover{
+    background-color: rgba(0,0,0,0.1);
+    color: #5e7ce2;
+}
+
+header #logo a{
+    font-size: 1.7em;
+    padding: 20px;
+    padding-left: 15px;
+    color: #5e7ce2;
+    font-weight: bold;
+}
+
+header #logo{
+    display: inline-block;
+    width: 70%;
+}
+
+header .nav-toggle{
+    display: inline-block;
+    width: 20%;
+    
+    text-align: right;
+}
+
+/*header end*/
+
+
+/*intro start*/
+#intro{
+    min-height: 500px;
+    background-image:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,.5)),url(../img/intro.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.intro-text{
+    position: absolute;
+    top: 170px;
+    text-align: center;
+    left: 0px
+   
+}
+
+.intro-text h1{
+    font-size: 1.7em;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.intro-text h1 span{
+    color: #5e7ce2;
+    font-style: italic;
+}
+
+.intro-text .call-to-action{
+    width: 60%;
+    margin: 20px auto;
+}
+
+.intro-text .call-to-action .btn-bg{
+    width: 100%;
+}
+
+/*intro end*/
+
+
+/*about us start*/
+#about-us{
+    background-color: #fff;
+    text-align: center;
+}
+
+/*about us end*/
+
+/*by numbers start*/
+#by-numbers{
+    background-color: #142442;
+    color: #fff;
+}
+
+.fact{
+    font-size: 2em;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.fact-icon{
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.fact-text{
+    font-style: italic;
+}
+
+/*by numbers end*/
+
+/*works start*/
+#works .section-title,
+#works .section-desc{
+    text-align: center;
+}
+
+.work{
+    margin: 20px 0px;
+    height: 255px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.2);
+}
+
+.work-img{
+    height: 255px;
+    width: 100%;
+}
+
+.work-title{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+/*works end*/
+
+/*join us start*/
+#join-us{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),url(../img/work-with-us.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+}
+
+#join-us h5{
+    margin-top: 20px;
+    padding: 10px 0px;
+    font-size: 1.3em;
+}
+
+#join-us h4{
+    padding: 10px 0px;
+    font-size: 1.5em;
+}
+
+/*join us end*/
+
+/*services start*/
+#services{
+    background-color: #fff;
+}
+/*services end*/
+
+/*pricing start*/
+.plan{
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 7px solid #5e7ce2;
+    border-radius: 10px
+}
+
+.plan-title{
+    font-size: 2em;
+    color: #5e7ce2;
+    padding: 15px 0px;
+}
+
+.plan-price{
+    font-style: italic;
+    padding: 10px 0px;
+    font-size: 1.2em;
+    }
+
+.plan li{
+    padding: 5px 0px;
+}
+/*pricing end*/
+
+/*team start*/
+#team{
+    background-color: #fff;
+}
+
+.member{
+    margin: 15px 0px;
+    text-align: center;
+}
+
+.member-name{
+    padding: 5px 0px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.member-job{
+    font-style: italic;
+    font-size: 1.2em;
+    padding: 5px 0px;
+}
+
+.member-words{
+    padding: 5px 0px;
+}
+
+.social-links a{
+    color: #010611;
+    display: inline-block;
+    padding: 12px;
+}
+
+/*team end*/
+
+/*contact start*/
+form{
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: #f4f4f4;
+    transition: all .4s;
+   
+}
+
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus{
+    border: 2px solid #f4f4f4;
+    background-color: #fff;
+    
+}
+
+form textarea{
+    min-height: 90px;
+    margin-bottom: 15px;
+}
+
+form label{
+    display: block;
+    padding: 5px 0px;
+}
+
+
+/*contact end*/
+
+#map{
+    padding-bottom: 0px;
+}
+
+/*footer start*/
+footer{
+    background-color: #142442;
+    color: #fff;
+}
+
+footer p{
+    padding: 10px 0px;
+}
+footer a{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+footer .info-title{
+    padding: 15px 0px;
+    font-size: 1.3em;
+}
+
+footer .copyright{
+    text-align: center;
+}
+
+/*footer end*/
+
+.go-up{
+    background-color: #142442;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.1);
+}
+
+.go-up a{
+    padding: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/*shared code*/
+ul{
+    list-style-type: none;
+}
+section{
+    padding-bottom: 30px;
+}
+
+.section-title{
+    padding: 15px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section-title span{
+    color: #5e7ce2;
+}
+
+.section-desc{
+    padding: 15px 0px;
+    padding-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+.call-to-action{
+    margin: 20px 0px;
+}
+
+.btn-bg{
+    text-decoration: none;
+    background-color: #5e7ce2;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.btn-bg:hover{
+    background-color: #fff;
+    color: #5e7ce2;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.service{
+    margin: 15px 0px;
+    text-align: center;
+}
+
+.service-icon{
+    font-size: 3em;
+    padding: 15px;
+    color: #5e7ce2;
+}
+
+.service-title{
+    padding: 5px 0px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+
+
+/*media query for tablets*/
+
+@media screen and (min-width:750px){
+    header .nav-toggle{
+        display: none;
+    }
+    
+    header nav{
+        display: block;
+    }
+    
+    header nav li{
+        display: inline-block
+    }
+    
+    .intro-text{
+        top:220px;
+    }
+    
+    .service,
+    .fact,
+    .work,
+    .plan,
+    .member,
+    .info{
+        width: 45.5%;
+        display: inline-block;
+        margin: 2%;
+    }
+    
+    #services .service:last-child,
+    .plan:last-child{
+        display: block;
+        margin: auto;
+    }
+    
+    
+    .member-img,
+    {
+        height: 245px;
+        overflow: hidden;
+    }
+}
+
+/*media query for laptops*/
+
+@media screen and (min-width:1000px){
+    
+    header #logo{
+        width:30%;
+        display: inline-block;
+    }
+    
+    header nav{
+        width: 65%;
+        display: inline-block;
+    }
+    
+    #intro{
+        min-height: 600px;
+    }
+    
+    #intro .intro-text{
+        width: 80%;
+        left: 10%;
+    }
+    
+    #intro .call-to-action{
+        max-width: 250px;
+    }
+    
+    .service,
+    .work,
+    .plan,
+    .info{
+        width: 30%;
+        margin: 1%;
+    }
+    
+    #services .service:last-child,
+    .plan:last-child
+    {
+        display: inline-block;
+        margin: 1%;
+    }
+    
+    .fact,
+    .member{
+        width: 22.5%;
+        margin: 1%;
+    }
+    
+    .member-img img{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .member-img{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    #contact form{
+        max-width: 800px;
+        margin: 20px auto;
+    }
+}
